@@ -1,107 +1,165 @@
-@media screen and (max-width: 375px){
-  .blur-background-wih{
-    margin-top: 5px;
-  }
+@media screen and (max-width: 375px) {
+    .blur-background-wih {
+        margin-top: 5px;
+    }
 }
 
+
 /* ZOOM IMG CENTRE D'INTERET */
+
 img.imgcentreinteret {
-  -webkit-transition: all 0.4s;
-  -webkit-transform: scale(1.0);
-  -webkit-backface-visibility: hidden;
-  margin: 40px;
-  width: 250px;
+    -webkit-transition: all 0.4s;
+    -webkit-transform: scale(1.0);
+    -webkit-backface-visibility: hidden;
+    margin: 40px;
+    width: 250px;
 }
+
 .imgcentreinteret:hover {
-	-webkit-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
+
 
 /*FIN ZOOM IMG*/
 
+
 /* https://codepen.io/ivhed/pen/BRzWEQ */
+
 .container {
-  width: 300px;
-  height: 180px;
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  margin: 5px;
+    width: 300px;
+    height: 180px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
 }
-.button{
-  position: inherit;
-  z-index: 2;
-  top: 122px;
-  left: 18px;
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  letter-spacing: 2px;
-  font-size: 30px;
-  border: 3px solid;
-  padding: 10px;
-  display: inline;
-  cursor: pointer;
-  background-color: transparent;
+
+.button {
+    position: inherit;
+    z-index: 2;
+    top: 122px;
+    left: 18px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+    font-size: 30px;
+    border: 3px solid;
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+    background-color: transparent;
 }
+
+
 /*immo31*/
+
 .blur-background-immo {
-  background-image: url("../img/immo31.jpg");
+    background-image: url("../img/immo31.jpg");
 }
+
+
 /*Vanille*/
+
 .blur-background-vanille {
-  background-image: url("../img/vanille.jpg");
+    background-image: url("../img/vanille.jpg");
 }
+
+
 /*M2L*/
+
 .blur-background-m2l {
-  background-image: url("../img/lam2l.jpg");
+    background-image: url("../img/lam2l.jpg");
 }
+
+
 /*troc*/
+
 .blur-background-troc {
-  background-image: url("../img/trocboutures.jpg");
+    background-image: url("../img/trocboutures.jpg");
 }
-.imgtroc{
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  transition:transform 0.25s ease;
+
+.imgzoom {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: transform 0.25s ease;
 }
-.imgtroc:hover{
-  -webkit-transform:scale(1.5);
-  transform:scale(1.5);
+
+.imgzoom:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
+
+
 /*WhatIveHeard*/
+
 .blur-background-wih {
-  background-image: url("../img/whativeheard.jpg");
+    background-image: url("../img/whativeheard.jpg");
 }
-#video{
-  width: 300px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 20px;
+
+
+/*FinibusPizza*/
+
+.blur-background-fp {
+    background-image: url("../img/finibuspizza.jpg");
 }
+
+#video {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
 /* cases */
-.blur-background-immo, .blur-background-vanille, .blur-background-m2l, .blur-background-troc, .blur-background-wih {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  background-size: cover;
-  transition: filter 1s;
-  transition: all 1.5s ease;
+
+.blur-background-immo,
+.blur-background-vanille,
+.blur-background-m2l,
+.blur-background-troc,
+.blur-background-wih,
+.blur-background-fp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    transition: filter 1s;
+    transition: all 1.5s ease;
 }
+
+
 /* zoom sur case*/
-.blur-background-immo:hover, .blur-background-vanille:hover, .blur-background-m2l:hover, .blur-background-troc:hover, .blur-background-wih:hover{
-  transform: scale(1.01);
-  transition: all 2s ease;
-  -webkit-filter: blur(2px);/*flou*/
+
+.blur-background-immo:hover,
+.blur-background-vanille:hover,
+.blur-background-m2l:hover,
+.blur-background-troc:hover,
+.blur-background-wih:hover,
+.blur-background-fp:hover {
+    transform: scale(1.01);
+    transition: all 2s ease;
+    -webkit-filter: blur(2px);
+    /*flou*/
 }
+
+
 /* zoom uniquement image, pas bouton */
-.button:hover + .blur-background-immo, .button:hover + .blur-background-vanille, .button:hover + .blur-background-m2l, .button:hover + .blur-background-troc, .button:hover + .blur-background-wih{
-  transform: scale(1.01);
-  transition: all 2s ease;
-  -webkit-filter: blur(2px);/*flou*/
+
+.button:hover+.blur-background-immo,
+.button:hover+.blur-background-vanille,
+.button:hover+.blur-background-m2l,
+.button:hover+.blur-background-troc,
+.button:hover+.blur-background-wih,
+.button:hover+..blur-background-fp {
+    transform: scale(1.01);
+    transition: all 2s ease;
+    -webkit-filter: blur(2px);
+    /*flou*/
 }
+
 
 /*div.blur-background-immo,div.blur-background-vanille,div.blur-background-m2l,div.blur-background-troc,div.blur-background-wih{
   margin-top: 5px;
 }*/
-
