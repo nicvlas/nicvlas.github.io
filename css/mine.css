@@ -25,7 +25,7 @@ img.imgcentreinteret {
 
 /* https://codepen.io/ivhed/pen/BRzWEQ */
 
-.container {
+.containerr {
     width: 300px;
     height: 180px;
     position: relative;
@@ -38,7 +38,7 @@ img.imgcentreinteret {
     position: inherit;
     z-index: 2;
     top: 122px;
-    left: 18px;
+    /*left: 18px;*/
     color: white;
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 2px;
